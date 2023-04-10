@@ -1,11 +1,6 @@
 
-let gridX = 20;
-let gridY = 20;
-
-let r = 155;
-let g = 155;
-let b = 200;
-let a = 1;
+let gridX = 50;
+let gridY = 50;
 
 let container = document.querySelector('.etch-grid');
 
@@ -39,8 +34,13 @@ function mouseEnter(event){
         return;
     }
 
+    event.target.r = Math.floor(Math.random()*256);
+    event.target.g = Math.floor(Math.random()*256);
+    event.target.b = Math.floor(Math.random()*256);
+    event.target.a = 1;
+
     event.target.classList.add('cell-mouse-over');
-    event.target.style = `background-color: rgba(${r}, ${g}, ${b}, ${a});`;
+    event.target.style = `background-color: rgba(${event.target.r}, ${event.target.g}, ${event.target.b}, ${event.target.a});`;
 
 
 }
@@ -53,6 +53,6 @@ function mouseOut(event){
 
     event.target.classList.remove('cell-mouse-over');
     event.target.classList.add('moused');
-    event.target.style = `background-color: rgba(${r}, ${g}, ${b}, ${a});`;
+    event.target.style = `background-color: rgba(${event.target.r}, ${event.target.g}, ${event.target.b}, ${event.target.a});`;
 
 }
