@@ -1,2 +1,54 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vw;
+  }
+  
+  
+  .etch-grid{
+    display: flex;
+    background: gray;
+    width: 75vw;
+    height: 75vw;
+    margin: auto auto;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  
+  .rows{
+    
+    display: flex;
+    flex: 1 1 auto;
+    gap: 2px;
+  }
+  
+  .cells {
+    flex: 1 1 auto;
+    background: green;
+    transition: all 0.5s;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    
+  }
+
+  .cell-mouse-over{
+    box-shadow: 3px 3px 0 0 rgb(100,100,100);
+    border-color: black; 
+    transform: scale(1.2);
+  }
 
 
+  .cell-moused{
+    border-color: transparent; 
+  }
+  
+ /* .cells:hover {
+    border-color: black;
+    transform: scale(1.2);
+    background-color: blue;
+  }*/
+  
