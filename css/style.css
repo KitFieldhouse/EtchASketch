@@ -1,55 +1,77 @@
 body{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: auto;
-    width: 100vh;
-    height: 100vh;
-  }
-  
-  
-  .etch-grid{
-    display: flex;
-    background: gray;
-    width: 90%;
-    height: 90%;
-    margin: auto auto;
-    flex-direction: column;
-    gap: 2px;
-  }
-  
-  
-  .rows{
-    
-    display: flex;
-    flex: 1 1 auto;
-    gap: 2px;
-  }
-  
-  .cells {
-    flex: 1 1 auto;
-    background: green;
-    transition: all 0.5s;
-    border-style: solid;
-    border-color: transparent;
-    border-width: 1px;
-    
-  }
-
-  .cell-mouse-over{
-    box-shadow: 3px 3px 0 0 rgb(100,100,100);
-    border-color: black; 
-    transform: scale(1.2);
-  }
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  width: 100vh;
+  height: 100vh;
+}
 
 
-  .cell-moused{
-    border-color: transparent; 
-  }
+.etch-grid{
+  display: flex;
+  background: gray;
+  width: 90%;
+  height: 90%;
+  margin: auto auto;
+  flex-direction: column;
+  gap: 2px;
+}
+
+
+.rows{
   
- /* .cells:hover {
-    border-color: black;
-    transform: scale(1.2);
-    background-color: blue;
-  }*/
+  display: flex;
+  flex: 1 1 auto;
+  gap: 2px;
+}
+
+.cells {
+  flex: 1 1 auto;
+  background: green;
+  transition: all 0.5s;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
   
+}
+
+.cell-mouse-over{
+  box-shadow: 3px 3px 0 0 rgb(100,100,100);
+  border-color: black; 
+  transform: scale(1.2);
+}
+
+
+.cell-moused{
+  border-color: transparent; 
+}
+
+label {
+  
+}
+
+.control-area{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-right: 5%;
+}
+
+.control-area div {
+margin-bottom: 10%;
+border-style: solid;
+padding: 10px 5px;
+box-shadow: 5px 5px 0px;
+transition: transform 0.5s;
+}
+
+.control-area div:hover {
+transform: scale(1.1);
+}
+
+/* .cells:hover {
+  border-color: black;
+  transform: scale(1.2);
+  background-color: blue;
+}*/
