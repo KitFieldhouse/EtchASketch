@@ -47,10 +47,6 @@ body{
   border-color: transparent; 
 }
 
-label {
-  
-}
-
 .control-area{
 display: flex;
 flex-direction: column;
